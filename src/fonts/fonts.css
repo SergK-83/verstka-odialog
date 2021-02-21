@@ -1,0 +1,48 @@
+/*
+====================================
+  font Roboto
+====================================
+*/
+
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoLight.eot");
+    src: url("roboto/RobotoLight.woff"),
+    url("roboto/RobotoLight.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoRegular.eot");
+    src: url("roboto/RobotoRegular.woff"),
+    url("roboto/RobotoRegular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoMedium.eot");
+    src: url("roboto/RobotoMedium.woff"),
+    url("roboto/RobotoMedium.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("roboto/RobotoBold.eot");
+    src: url("roboto/RobotoBold.woff"),
+    url("roboto/RobotoBold.ttf");
+    font-weight: 700;
+}
+
+/*
+====================================
+  font Bernier
+====================================
+*/
+
+@font-face {
+    font-family: Bernier;
+    src: url("bernier/BERNIER-Regular.eot");
+    src: url("bernier/BERNIER-Regular.woff"),
+    url("bernier/BERNIER-Regular.ttf");
+    font-weight: 700;
+}

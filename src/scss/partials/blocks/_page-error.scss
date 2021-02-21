@@ -1,0 +1,48 @@
+/*
+====================================
+  page error
+====================================
+*/
+
+.page-error {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.page-error__first-block-caption {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.page-error__second-block {
+  position: relative;
+  margin-top: -35px;
+  margin-bottom: 30px;
+}
+
+.page-error__second-block-caption {
+  position: absolute;
+  top: 56%;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .page-error__second-block-caption {
+    position: relative;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 522px) {
+  .page-error__first-block-img {
+    width: 110px;
+  }
+
+  .page-error__second-block {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

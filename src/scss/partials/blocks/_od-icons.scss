@@ -1,0 +1,19 @@
+/*
+====================================
+  od-icons
+====================================
+*/
+
+.od-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.od-icon_cross:after {
+  content: '\2715';
+}

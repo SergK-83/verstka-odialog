@@ -1,0 +1,119 @@
+/*
+====================================
+  demo-click block
+====================================
+*/
+
+.demo-click {
+  position: relative;
+}
+
+.demo-click__cursor {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: url("../img/cursor.png") no-repeat;
+  background-size: contain;
+  opacity: 0;
+  animation-name: slide;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.demo-click__cursor:before {
+  border-radius: 50%;
+  margin: -35px 0 0 -35px;
+  left: 16px;
+  top: 4px;
+  height: 70px;
+  width: 70px;
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: inset 0 0 0 70px rgba(111,148,182,0);
+  animation-name: show-click;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes show-click  {
+  0% {
+    opacity: 0;
+  }
+
+  71% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+    transform: scale3d(0.1, 0.1, 1);
+    box-shadow: inset 0 0 0 70px rgba(111,148,182,0);
+  }
+
+  80% {
+    box-shadow: inset 0 0 0 2px rgba(111,148,182,0.9);
+    opacity: 0.9;
+  }
+
+  85% {
+    box-shadow: inset 0 0 0 1px rgba(111,148,182,0.9);
+    opacity: 0;
+    transform: scale3d(2, 2, 1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    bottom: -20px;
+    right: -20px;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  50% {
+    bottom: -20px;
+    right: -20px;
+    opacity: 1;
+    transform: scale3d(1, 1, 1) rotate(0deg);
+  }
+
+  55% {
+    transform: scale3d(1, 1, 1) rotate(-10deg);
+  }
+
+  70% {
+    bottom: 40%;
+    right: calc(100% - 100px);
+    opacity: 1;
+  }
+
+  74% {
+    transform: scale3d(1, 1, 1) rotate(-10deg);
+  }
+
+  75% {
+    transform: scale3d(0.4, 0.4, 1) rotate(-30deg);
+  }
+
+  77% {
+    transform: scale3d(1, 1, 1) rotate(-10deg);
+  }
+
+  95% {
+    bottom: 40%;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 40%;
+    right: calc(100% - 100px);
+    opacity: 0;
+    transform: scale3d(1, 1, 1) rotate(-10deg);
+  }
+}

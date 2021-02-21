@@ -1,0 +1,49 @@
+{
+  "_from": "bootstrap-sass-datepicker",
+  "_id": "bootstrap-sass-datepicker@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-fGVoVThc/V45KDt4+s8Wk4ki2MuwSmGPm+JfAOQYDbeLtmOygyQUlwQr4spWUhkfaYv4rczBFa69M/rPey97Mg==",
+  "_location": "/bootstrap-sass-datepicker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "bootstrap-sass-datepicker",
+    "name": "bootstrap-sass-datepicker",
+    "escapedName": "bootstrap-sass-datepicker",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bootstrap-sass-datepicker/-/bootstrap-sass-datepicker-1.0.0.tgz",
+  "_shasum": "cb127b2c0723439586bd4aec3d1845514bfc3bff",
+  "_spec": "bootstrap-sass-datepicker",
+  "_where": "C:\\Users\\user\\projects\\otkrytyi-dialog-verstka",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/abnovak/bootstrap-sass-datepicker/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "This is a fork & port to SASS of Stefan Petre's [original code](http://www.eyecon.ro/bootstrap-datepicker/);\r thanks go to him for getting this thing started!",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "homepage": "https://github.com/abnovak/bootstrap-sass-datepicker#readme",
+  "license": "ISC",
+  "main": "js/bootstrap-sass-datepicker.js",
+  "name": "bootstrap-sass-datepicker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abnovak/bootstrap-sass-datepicker.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

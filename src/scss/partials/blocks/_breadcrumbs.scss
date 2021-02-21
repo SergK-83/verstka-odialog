@@ -1,0 +1,32 @@
+/*
+====================================
+  breadcrumb
+====================================
+*/
+
+.breadcrumb {
+  position: relative;
+  background-color: transparent;
+  margin-top: 5px;
+  padding-left: 0;
+  z-index: 2;
+  font-size: 12px;
+}
+
+.breadcrumb > li > a {
+  color: #a4a4a4;
+}
+
+.breadcrumb > li > a:hover {
+  color: #23527c;
+}
+
+.breadcrumb>.active {
+  color: #638ad5;
+}
+
+@media (max-width: 600px) {
+  .breadcrumb {
+    font-size: 10px;
+  }
+}

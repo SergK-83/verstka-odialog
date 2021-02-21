@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<style>
+    /* Эти стили только для примера - демонстрации в мобильной версии */
+
+    @media (max-width: 650px) {
+        .od-chat__view {
+            display: none;
+        }
+    }
+
+    @media (min-width: 651px) {
+        .od-chat__view, .od-chat__nav {
+            display: flex !important;
+        }
+    }
+</style>
+
+<body>
+
+//= blocks/header-authorized_user.html
+
+<main>
+    <div class="container">
+
+        <div class="od-chat">
+            <div class="od-chat__nav">
+                <div class="od-chat__nav-header">
+                    <div class="od-chat__nav-search">
+                        <input type="text" class="form-control" placeholder="Поиск...">
+                    </div>
+                    <div class="od-chat__nav-header-tools">
+                        <button class="btn btn-sm btn-default">Мои жалобы</button>
+                        <button class="btn btn-sm btn-default">Слежу</button>
+                    </div>
+                </div>
+                <div class="od-chat__nav-body">
+                    <ul class="od-chat__nav-menu">
+                        <li class="od-chat__nav-menu-item od-chat__nav-menu-item_active">
+                            <div class="flex-box align-items-center justify-space-between m-b-5">
+                                <div class="od-chat__nav-menu-item-name" title="Здравствуйте! У меня такая проблема, вобщем совсем необычная ситуация приключилась.">
+                                    Здравствуйте! У меня такая проблема, вобщем совсем необычная ситуация приключилась.
+                                </div>
+                                <div>
+                                    <div class="od-chat__status-icon od-chat__status-icon_mail" data-toggle="tooltip" data-placement="left" title="Статус"></div>
+                                </div>
+                            </div>
+                            <div class="flex-box align-items-end justify-space-between">
+                                <div class="organ-list">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                </div>
+                                <span class="fs-11 text-light text-nowrap">22:20, 13.11.19</span>
+                            </div>
+                            <span class="od-chat__nav-item-notice">23</span>
+                        </li>
+                        <li class="od-chat__nav-menu-item">
+                            <div class="flex-box align-items-center justify-space-between m-b-5">
+                                <div class="od-chat__nav-menu-item-name" title="Произошел очень странный случай">
+                                    Произошел очень странный случай
+                                </div>
+                                <div>
+                                    <div class="od-chat__status-icon od-chat__status-icon_check" data-toggle="tooltip" data-placement="left" title="Статус"></div>
+                                </div>
+                            </div>
+                            <div class="flex-box align-items-end justify-space-between">
+                                <div class="organ-list">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                </div>
+                                <span class="fs-11 text-light text-nowrap">22:20, 13.11.19</span>
+                            </div>
+                        </li>
+                        <li class="od-chat__nav-menu-item">
+                            <div class="flex-box align-items-center justify-space-between m-b-5">
+                                <div class="od-chat__nav-menu-item-name" title="Так-то так-то">
+                                    Так-то так-то
+                                </div>
+                                <div>
+                                    <div class="od-chat__status-icon od-chat__status-icon_time" data-toggle="tooltip" data-placement="left" title="Статус"></div>
+                                </div>
+                            </div>
+                            <div class="flex-box align-items-end justify-space-between">
+                                <div class="organ-list">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                </div>
+                                <span class="fs-11 text-light text-nowrap">22:20, 13.11.19</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="od-chat__nav-footer">
+                    <button class="btn btn-primary-inverse btn-block text-primary">Новая жалоба</button>
+                </div>
+            </div>
+            <div class="od-chat__view">
+                <div class="od-chat__view-settings">
+                    <div class="od-chat__view-settings-header">
+                        <div class="od-chat__view-settings-close">
+                            <span class="od-icon od-icon_cross" title="Закрыть настройки"></span>
+                        </div>
+                        <h4 class="od-chat__view-settings-title">Настройки</h4>
+                    </div>
+                    <div class="od-chat__view-settings-body">
+                        <div class="od-chat__view-settings-container">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="od-chat__thumb">
+                                        <div class="od-chat__thumb-body">
+                                            <div class="od-chat__thumb-title" title="Здравствуйте! У меня такая проблема, вобщем совсем необычная ситуация приключилась.">
+                                                Здравствуйте! У меня такая проблема, вобщем совсем необычная ситуация приключилась.
+                                            </div>
+                                            <div class="organ-list">
+                                                <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                                <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                                <img src="img/organ-mini.png" alt="">
+                                                <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                                <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                                <img src="img/organ-mini.png" alt="">
+                                                <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                                <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                                <img src="img/organ-mini.png" alt="">
+                                                <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                                <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                                <img src="img/organ-mini.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="od-chat__status-icon-big od-chat__status-icon-big_time" data-toggle="tooltip" data-placement="left" title="Статус"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="checkbox checkbox-custom">
+                                        <label>
+                          <span class="checkbox-custom__toggle">
+                            <img class="checkbox-custom__icon-ok" src="img/icon-ok.png" alt="">
+                          </span>
+                                            <input type="checkbox">
+                                            <span class="checkbox-custom__caption">Определенная настройка</span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-custom">
+                                        <label>
+                          <span class="checkbox-custom__toggle">
+                            <img class="checkbox-custom__icon-ok" src="img/icon-ok.png" alt="">
+                          </span>
+                                            <input type="checkbox">
+                                            <span class="checkbox-custom__caption">Определенная настройка</span>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="checkbox checkbox-custom">
+                                        <label>
+                          <span class="checkbox-custom__toggle">
+                            <img class="checkbox-custom__icon-ok" src="img/icon-ok.png" alt="">
+                          </span>
+                                            <input type="checkbox">
+                                            <span class="checkbox-custom__caption">Определенная настройка</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="flex-box align-items-center justify-space-between">
+                                        <span>Уведомления</span>
+                                        <div class="custom-switch">
+                                            <div class="custom-switch__onoff">
+                                                <label class="custom-switch__onoff-label">
+                                                    <input type="checkbox" name="" class="custom-switch__onoff-checkbox">
+                                                    <span class="custom-switch__onoff-inner"></span>
+                                                    <span class="custom-switch__onoff-switch"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="checkbox checkbox-custom">
+                                        <label>
+                          <span class="checkbox-custom__toggle">
+                            <img class="checkbox-custom__icon-ok" src="img/icon-ok.png" alt="">
+                          </span>
+                                            <input type="checkbox">
+                                            <span class="checkbox-custom__caption">Определенная настройка</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="radio-custom-list m-t-10">
+                                        <div class="radio-custom radio-custom_active">
+                                            <label>
+                                                <div>
+                                                    <div class="radio-custom__toggle"></div>
+                                                </div>
+                                                <div class="radio-custom__caption">
+                                                    Выборочная настройка 1
+                                                </div>
+                                                <input type="radio" name="dispatchMethod" value="" checked="">
+                                            </label>
+                                        </div>
+                                        <div class="radio-custom">
+                                            <label>
+                                                <div>
+                                                    <div class="radio-custom__toggle"></div>
+                                                </div>
+                                                <div class="radio-custom__caption">
+                                                    Выборочная настройка 2
+                                                </div>
+                                                <input type="radio" name="dispatchMethod" value="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="od-chat__view-settings-footer">
+                        <button class="btn btn-primary sending-block__btn">Сохранить</button>
+                    </div>
+                </div>
+                <div class="od-chat__view-header">
+                    <div class="od-chat__view-header-content od-chat__view-show-settings">
+                        <div class="flex-box align-items-center">
+                            <div class="od-chat__view-back">
+                                <img src="img/icon-arrow-left-blue.png" alt="">
+                            </div>
+                            <div>
+                                <div class="od-chat__view-header-title"
+                                     title="Здравствуйте! У меня такая проблема, вобщем совсем необычная ситуация приключилась.">
+                                    Здравствуйте! У меня такая проблема, вобщем совсем необычная ситуация приключилась.
+                                </div>
+                                <div class="organ-list">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                    <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    <img src="img/organ-rosprirodnadzor-mini.png" alt="">
+                                    <img src="img/organ-mini.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-box align-items-center">
+                            <div class="od-chat__view-header-status">Отправлено</div>
+                            <div class="od-chat__status-icon-big od-chat__status-icon-big_time" data-toggle="tooltip" data-placement="left" title="Статус"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="chatViewBlock" class="od-chat__view-body-wrap">
+                    <div class="od-chat__view-body">
+                        <div class="od-chat__date">
+                            12 октября 2019 г.
+                        </div>
+
+                        <div class="od-chat__msg-moderation">
+                            <img src="img/icon-check-circle-green.png" alt="">
+                            <p class="od-chat__msg-moderation-text">Ваша жалоба находится на модерации...</p>
+                            <span class="od-chat__time">12:22</span>
+                        </div>
+
+                        <hr class="hr-dashed">
+
+                        <div class="od-chat__msg-wrap">
+                            <div id="chatMsg-1" class="od-chat__msg">
+                                <div class="od-chat__msg-menu">
+                                    <div class="od-chat__msg-icon">
+                                        <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    </div>
+                                    <div class="dropdown od-chat__msg-dropdown">
+                                        <a href="javascript:0" data-toggle="dropdown" class="dropdown-toggle"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-body">
+                                    <a href="#" class="od-chat__msg-title">Роспотребнадзор 1</a>
+                                    <p class="od-chat__msg-text">Обращение отправлено в Управление Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по городу Санкт-Петербургу
+                                    </p>
+                                </div>
+                                <div class="od-chat__msg-aside">
+                                    <span class="od-chat__time">13:29</span>
+                                </div>
+                                <span class="od-chat__msg-answer">Ответить</span>
+                            </div>
+                        </div>
+
+                        <div class="od-chat__msg-wrap">
+                            <div id="chatMsg-2" class="od-chat__msg">
+                                <div class="od-chat__msg-menu">
+                                    <div class="od-chat__msg-icon">
+                                        <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    </div>
+                                    <div class="dropdown od-chat__msg-dropdown">
+                                        <a href="javascript:0" data-toggle="dropdown" class="dropdown-toggle"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-body">
+                                    <a href="#" class="od-chat__msg-title">Роспотребнадзор 2</a>
+                                    <p class="od-chat__msg-text">Обращение отправлено в Управление Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по городу Санкт-Петербургу
+                                    </p>
+                                </div>
+                                <div class="od-chat__msg-aside">
+                                    <span class="od-chat__time">13:29</span>
+                                </div>
+                                <span class="od-chat__msg-answer">Ответить</span>
+                            </div>
+                        </div>
+
+                        <div class="od-chat__date">
+                            18 октября 2019 г.
+                        </div>
+
+                        <div class="od-chat__msg-wrap">
+                            <div id="chatMsg-3" class="od-chat__msg">
+                                <div class="od-chat__msg-menu">
+                                    <div class="od-chat__msg-icon">
+                                        <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    </div>
+                                    <div class="dropdown od-chat__msg-dropdown">
+                                        <a href="javascript:0" data-toggle="dropdown" class="dropdown-toggle"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-body">
+                                    <a href="#" class="od-chat__msg-title">Министерство министерств по надзору в сфере защиты прав потребителей</a>
+                                    <p class="od-chat__msg-text">Ответ от Управление Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по городу Санкт-Петербургу
+                                    </p>
+                                    <div class="od-chat__msg-attachment">
+                                        <div id="declarationFancyBox">
+                                            <div class="declaration-card">
+                                                <div>
+                                                    <div class="declaration-card__body">
+                                                        <a class="declaration-card__img" href="img/fancy.png" data-fancybox="gallery">
+                                                            <img class="declaration-card__img-image"
+                                                                 src="img/organ-rospotrebnadzor.png" alt="">
+                                                        </a>
+                                                        <div class="declaration-card__menu"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="declaration-card">
+                                                <div>
+                                                    <div class="declaration-card__body">
+                                                        <a class="declaration-card__img" href="img/fancy.png" data-fancybox="gallery">
+                                                            <img class="declaration-card__img-image"
+                                                                 src="img/organ-rospotrebnadzor.png" alt="">
+                                                        </a>
+                                                        <div class="declaration-card__menu"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-aside">
+                                    <span class="od-chat__time">13:29</span>
+                                </div>
+                                <span class="od-chat__msg-answer">Ответить</span>
+                            </div>
+                        </div>
+
+                        <div class="od-chat__msg-wrap">
+                            <div id="chatMsg-4" class="od-chat__msg">
+                                <div class="od-chat__msg-menu">
+                                    <div class="od-chat__msg-icon">
+                                        <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    </div>
+                                    <div class="dropdown od-chat__msg-dropdown">
+                                        <a href="javascript:0" data-toggle="dropdown" class="dropdown-toggle"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-body">
+                                    <a href="#" class="od-chat__msg-title">Роспотребнадзор 4</a>
+                                    <p class="od-chat__msg-text">Обращение отправлено в Управление Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по городу Санкт-Петербургу
+                                    </p>
+                                </div>
+                                <div class="od-chat__msg-aside">
+                                    <span class="od-chat__time">13:29</span>
+                                </div>
+                                <span class="od-chat__msg-answer">Ответить</span>
+                            </div>
+                        </div>
+
+                        <div class="od-chat__msg-wrap">
+                            <div id="chatMsg-5" class="od-chat__msg">
+                                <div class="od-chat__msg-menu">
+                                    <div class="od-chat__msg-icon">
+                                        <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    </div>
+                                    <div class="dropdown od-chat__msg-dropdown">
+                                        <a href="javascript:0" data-toggle="dropdown" class="dropdown-toggle"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-body">
+                                    <a href="#" class="od-chat__msg-title">Роспотребнадзор 5</a>
+                                    <p class="od-chat__msg-text">Обращение отправлено в Управление Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по городу Санкт-Петербургу
+                                    </p>
+                                </div>
+                                <div class="od-chat__msg-aside">
+                                    <span class="od-chat__time">13:29</span>
+                                </div>
+                                <span class="od-chat__msg-answer">Ответить</span>
+                            </div>
+                        </div>
+
+                        <div class="od-chat__msg-wrap">
+                            <div id="chatMsg-6" class="od-chat__msg">
+                                <div class="od-chat__msg-menu">
+                                    <div class="od-chat__msg-icon">
+                                        <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    </div>
+                                    <div class="dropdown od-chat__msg-dropdown">
+                                        <a href="javascript:0" data-toggle="dropdown" class="dropdown-toggle"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-body">
+                                    <a href="#" class="od-chat__msg-title">Пользователь</a>
+                                    <div class="od-chat__pre-msg" data-msg-id="chatMsg-5">
+                                        <div class="od-chat__pre-msg-title">Роспотребнадзор 5</div>
+                                        <p class="od-chat__pre-msg-text">Обращение отправлено в Управление Федеральной
+                                            службы по надзору в сфере защиты прав потребителей и благополучия человека
+                                            по городу Санкт-Петербургу</p>
+                                    </div>
+                                    <p class="od-chat__msg-text">Понятно, благодарю!</p>
+                                </div>
+                                <div class="od-chat__msg-aside">
+                                    <span class="od-chat__time">13:29</span>
+                                </div>
+                                <span class="od-chat__msg-answer">Ответить</span>
+                            </div>
+                        </div>
+
+                        <div class="od-chat__msg-wrap">
+                            <div id="chatMsg-7" class="od-chat__msg">
+                                <div class="od-chat__msg-menu">
+                                    <div class="od-chat__msg-icon">
+                                        <img src="img/organ-rospotrebnadzor-mini.png" alt="">
+                                    </div>
+                                    <div class="dropdown od-chat__msg-dropdown">
+                                        <a href="javascript:0" data-toggle="dropdown" class="dropdown-toggle"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Действие</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="od-chat__msg-body">
+                                    <a href="#" class="od-chat__msg-title">Пользователь</a>
+                                    <div class="od-chat__pre-msg" data-msg-id="chatMsg-1">
+                                        <div class="od-chat__pre-msg-title">Роспотребнадзор 1</div>
+                                        <p class="od-chat__pre-msg-text">Обращение отправлено в Управление Федеральной
+                                            службы по надзору в сфере защиты прав потребителей и благополучия человека
+                                            по городу Санкт-Петербургу</p>
+                                    </div>
+                                    <p class="od-chat__msg-text">Понятно, благодарю!</p>
+                                </div>
+                                <div class="od-chat__msg-aside">
+                                    <span class="od-chat__time">13:29</span>
+                                </div>
+                                <span class="od-chat__msg-answer">Ответить</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="od-chat__view-footer">
+                    <div id="chatSendingBLock" class="sending-block">
+                        <div class="sending-block__answer">
+                            <div class="sending-block__answer-icon">
+                                <span class="glyphicon glyphicon-share-alt"></span>
+                            </div>
+                            <div class="sending-block__answer-body">
+                                <div class="sending-block__answer-title"></div>
+                                <div class="sending-block__answer-text"></div>
+                            </div>
+                            <div class="sending-block__answer-close">
+                                <span class="od-icon od-icon_cross"></span>
+                            </div>
+                        </div>
+                        <div class="sending-block__content">
+                            <div class="sending-block__attach-file">
+                                <label>
+                                    <span class="glyphicon glyphicon-paperclip"></span>
+                                    <input type="file" multiple="">
+                                </label>
+                            </div>
+                            <textarea class="sending-block__textarea" rows="3"
+                                      placeholder=" Введите сообщение ..."></textarea>
+                            <div class="sending-block__tools">
+                                <button class="btn btn-primary sending-block__btn">Отправить</button>
+                                <div class="sending-block__tools-caption">
+                                    Ctrl + Enter
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src='js/libs.min.js'></script>
+<script src='js/main.js'></script>
+
+<script>
+    // Этот скрипт только для примера - демонстрации в мобильной версии
+
+    $('.od-chat__nav-menu-item').on('click', function () {
+        $('.od-chat__nav').css('display', 'none');
+        $('.od-chat__view').css('display', 'flex');
+    });
+
+    $('.od-chat__view-back').on('click', function (e) {
+        e.stopPropagation();
+
+        $('.od-chat__view').css('display', 'none');
+        $('.od-chat__nav').css('display', 'flex');
+    });
+</script>
+
+<!-- Modal -->
+//= blocks/modal-location.html
+
+</body>
+</html>

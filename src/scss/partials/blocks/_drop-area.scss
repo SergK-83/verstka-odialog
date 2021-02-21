@@ -1,0 +1,150 @@
+/*
+====================================
+  drop-area for files
+====================================
+*/
+
+.drop-area-wrap {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  transition: .25s ease-in-out;
+}
+
+#drop-area.active * {
+  pointer-events: none;
+}
+
+#drop-area.highlight {
+  border-color: #0092cf;
+  margin: -10px;
+  padding: 25px;
+  transition: .25s ease-in-out;
+}
+
+#inputFile {
+  display: none;
+}
+
+.file-upload {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.file-upload__link {
+  color: $primary;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.file-upload__link:hover {
+  color: #23527c;
+}
+
+#sourceFilesListWrap {
+  display: none;
+}
+
+#sourceFilesList {
+  max-height: 320px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 5px 10px 5px 35px;
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(0,0,0, .15);
+  box-shadow: inset 0 0 1px 1px rgba(0,0,0, .15);
+}
+
+.panel-form {
+  min-height: 369px;
+  margin-top: 20px;
+}
+
+#alertWrongFileSize {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-icon {
+  width: 100%;
+  height: 30px;
+  fill: #92b0b3;
+  display: block;
+  margin-bottom: 15px;
+}
+
+ol.file-list {
+  font-size: 12px;
+  padding-left: 25px;
+}
+
+ol.file-list li {
+  position: relative;
+  padding: 10px 90px 10px 10px;
+}
+
+ol.file-list li + li {
+  border-top: 1px dashed #e3e3e3;
+}
+
+ol.file-list li .tools {
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+ol.file-list li .action-remove {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+ol.file-list li .action-remove:hover {
+  opacity: .8;
+}
+
+@media (max-width: 767px) {
+  .drop-area-wrap {
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  #drop-area {
+    border: none;
+  }
+
+  .upload-icon {
+    display: none;
+  }
+
+  .file-upload__link {
+    display: inline-block;
+    border: 1px solid $primary;
+    border-radius: 4px;
+    padding: 5px 25px;
+    font-size: 12px;
+  }
+
+  .file-list li a {
+    display: inline-block;
+    width: calc(100% - 0px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: text-top;
+    font-size: 11px;
+  }
+
+  #sourceFilesList {
+    padding-left: 25px;
+    margin-top: 0;
+  }
+}

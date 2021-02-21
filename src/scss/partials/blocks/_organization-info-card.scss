@@ -1,0 +1,36 @@
+/*
+====================================
+  organization-info-card
+====================================
+*/
+
+.organization-info-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+
+.organization-info-card > img {
+  width: 98px;
+  margin-right: 30px;
+}
+
+.organization-info-card__caption {
+  padding-top: 16px;
+  font-size: 13px;
+}
+
+.organization-info-card__name {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline !important;
+}
+
+.organization-info-card__name:hover {
+  color: #777;
+}
+
+.organization-info-card__address {
+  margin-bottom: 5px;
+}

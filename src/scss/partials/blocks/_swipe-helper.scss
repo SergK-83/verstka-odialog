@@ -1,0 +1,53 @@
+/*
+====================================
+  swipe-helper
+====================================
+*/
+
+.swipe-helper {
+  display: none;
+  padding: 0 10px 8px 0;
+  font-size: 0;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .swipe-helper {
+    display: block;
+  }
+
+  .swipe-helper__icon {
+    animation: swipe-helper-anim 2s infinite;
+  }
+}
+
+@keyframes swipe-helper-anim {
+  0% {
+    transform: translate3d(-40px,0,0);
+    opacity: 0;
+  }
+  10% {
+    transform: translate3d(-40px,0,0);
+    opacity: 0;
+  }
+  20% {
+    transform: translate3d(-40px,0,0);
+    opacity: 1;
+  }
+  70% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+  80% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+  81% {
+    transform: translate3d(0,0,0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 0;
+  }
+}

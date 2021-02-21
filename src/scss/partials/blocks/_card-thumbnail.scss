@@ -1,0 +1,25 @@
+/*
+====================================
+  card-thumbnail
+====================================
+*/
+
+.card-thumbnail {
+  margin-bottom: 39px;
+}
+
+.card-thumbnail__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-thumbnail__img {
+  text-align: center;
+}
+
+.card-thumbnail__img > img {
+  max-width: 100%;
+}

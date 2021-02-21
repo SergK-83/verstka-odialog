@@ -1,0 +1,44 @@
+/*
+=======================================
+  scroll to up
+=======================================
+*/
+
+#scrollup {
+  display: none;
+  position: fixed;
+  left: 13px;
+  bottom: 60px;
+  z-index: 1500;
+  background: #2161CC;
+  padding: 6px 8px 8px;
+  opacity: .5;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#scrollup > div {
+  line-height: 0;
+}
+
+#scrollup .glyphicon-triangle-top {
+  font-size: 30px;
+  line-height: 19px;
+}
+
+#scrollup:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  #scrollup {
+    bottom: 12px;
+  }
+
+  #scrollup .glyphicon-triangle-top {
+    font-size: 19px;
+    line-height: 13px;
+  }
+}

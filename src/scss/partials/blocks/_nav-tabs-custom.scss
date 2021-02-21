@@ -1,0 +1,30 @@
+/*
+====================================
+  nav-tabs-custom
+====================================
+*/
+
+.nav-tabs-custom {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs-custom__item.active {
+  border-bottom: 2px solid $primary !important;
+}
+
+.nav-tabs-custom__btn {
+  border: none !important;
+}
+
+.nav-tabs-custom__item.active .nav-tabs-custom__btn, .nav-tabs-custom__item.active .nav-tabs-custom__btn:hover {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+.nav-tabs-custom_border-b {
+  .nav-tabs-custom__item {
+    border-bottom: 1px solid #ddd;
+  }
+}

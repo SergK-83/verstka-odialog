@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/slider-steps.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+
+<div class="top-banner">
+    <div class="container top-banner__container">
+        <button class="btn btn-primary top-banner__btn" data-toggle="modal" data-target="#modalRequest">Подробнее</button>
+    </div>
+</div>
+
+//= blocks/header.html
+
+<main>
+    <div class="swipe-helper">
+        <svg class="swipe-helper__icon" style="width:22px;fill:#bebebe;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"> <path d="M97.2 298.2S56.1 225 38.8 193.3c-23-42.2-26.8-60-10.9-68.8 9.9-5.5 23.6-3.2 32 11.4l19.6 31.2V44.8s-1.2-32.3 21.8-32.3c24.5 0 22.4 32.3 22.4 32.3v59.4s12.9-9.3 28-5.1c7.7 2.1 16.7 5.8 21.5 18 0 0 30.7-14.9 46 16.8 0 0 35.4-7 35.4 29.7s-44.2 134.6-44.2 134.6H97.2zM249.9.5l-10.6 10.6 24.1 23.8H158.5v15h105l-24.2 23.9 10.6 10.6 42.5-42z" class="st0"></path> </svg>
+    </div>
+    <div class="container">
+        <div class="main-banner">
+            <div class="main-banner__content">
+                <section>
+                    <h2 class="main-banner__content-title">Реши любую проблему</h2>
+                    <textarea class="form-control main-banner__content-textarea" placeholder="Опишите вашу проблему: что произошло, когда это было..."></textarea>
+                </section>
+                <section>
+                    <button class="btn btn-primary main-banner__content-btn">Отправить жалобу</button>
+                </section>
+            </div>
+            <div class="main-banner__aside">
+                <div class="main-banner__slider">
+                    <div class="main-banner__slider-item-wrap">
+                        <div class="main-banner__slider-item">
+                            <h3 class="main-banner__slider-title">Добился расчета после увольнения</h3>
+                            <img src="img/man.png" alt="" class="main-banner__slider-img">
+                            <div class="main-banner__slider-caption">Александр, Калуга</div>
+                        </div>
+                    </div>
+                    <div class="main-banner__slider-item-wrap">
+                        <div class="main-banner__slider-item">
+                            <h3 class="main-banner__slider-title">Вернули деньги в магазине</h3>
+                            <img src="img/women-with-boy.png" alt="" class="main-banner__slider-img">
+                            <div class="main-banner__slider-caption">Виктория, Калуга</div>
+                        </div>
+                    </div>
+                    <div class="main-banner__slider-item-wrap">
+                        <div class="main-banner__slider-item">
+                            <h3 class="main-banner__slider-title">Добился расчета после увольнения</h3>
+                            <img src="img/man.png" alt="" class="main-banner__slider-img">
+                            <div class="main-banner__slider-caption">Александр, Калуга</div>
+                        </div>
+                    </div>
+                    <div class="main-banner__slider-item-wrap">
+                        <div class="main-banner__slider-item">
+                            <h3 class="main-banner__slider-title">Вернули деньги в магазине</h3>
+                            <img src="img/women-with-boy.png" alt="" class="main-banner__slider-img">
+                            <div class="main-banner__slider-caption">Виктория, Калуга</div>
+                        </div>
+                    </div>
+                    <div class="main-banner__slider-item-wrap">
+                        <div class="main-banner__slider-item">
+                            <h3 class="main-banner__slider-title">Добился расчета после увольнения</h3>
+                            <img src="img/man.png" alt="" class="main-banner__slider-img">
+                            <div class="main-banner__slider-caption">Александр, Калуга</div>
+                        </div>
+                    </div>
+                    <div class="main-banner__slider-item-wrap">
+                        <div class="main-banner__slider-item">
+                            <h3 class="main-banner__slider-title">Вернули деньги в магазине</h3>
+                            <img src="img/women-with-boy.png" alt="" class="main-banner__slider-img">
+                            <div class="main-banner__slider-caption">Виктория, Калуга</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="section-title">Решим любую вашу проблему</div>
+            <div class="card-list hidden-xs">
+                <div class="category-card">
+                    <div class="category-card__header">
+                        <img src="img/icon/education.png" alt="">
+                        <h4>Школы и детсады</h4>
+                    </div>
+                    <div class="category-card__body">
+                        <ul>
+                            <li><a href="#">Очередь в детский сад</a></li>
+                            <li><a href="#">Грубость преподавателя</a></li>
+                            <li><a href="#">Денежные поборы</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                        <a class="text-muted" href="#">+ ещё 11 проблем</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__header">
+                        <img src="img/icon/hospital.png" alt="">
+                        <h4>Поликлиники, больницы</h4>
+                    </div>
+                    <div class="category-card__body">
+                        <ul>
+                            <li><a href="#">Хамство,</a></li>
+                            <li><a href="#">Нет врача на месте,</a></li>
+                            <li><a href="#">Некачественное лечение</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                        <a class="text-muted" href="#">+ ещё 11 проблем</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__header">
+                        <img src="img/icon/police.png" alt="">
+                        <h4>Полиция</h4>
+                    </div>
+                    <div class="category-card__body">
+                        <ul>
+                            <li><a href="#">Отказ в приёме заявления,</a></li>
+                            <li><a href="#">Отказ в возбуждении дела,</a></li>
+                            <li><a href="#">Неприезд полиции</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                        <a class="text-muted" href="#">+ ещё 11 проблем</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__header">
+                        <img src="img/icon/mail.png" alt="">
+                        <h4>Почта</h4>
+                    </div>
+                    <div class="category-card__body">
+                        <ul>
+                            <li><a href="#">Потеря или задержка посылки,</a></li>
+                            <li><a href="#">Очередь и хамство,</a></li>
+                            <li><a href="#">Повреждение посылки</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                        <a class="text-muted" href="#">+ ещё 11 проблем</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__header">
+                        <img src="img/icon/goods.png" alt="">
+                        <h4>Товары и услуги</h4>
+                    </div>
+                    <div class="category-card__body">
+                        <ul>
+                            <li><a href="#">Некачественые услуги,</a></li>
+                            <li><a href="#">Некачественные товары,</a></li>
+                            <li><a href="#">Продажа алкоголя ночью</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                        <a class="text-muted" href="#">+ ещё 11 проблем</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__header">
+                        <img src="img/icon/bag.png" alt="">
+                        <h4>Работодатели</h4>
+                    </div>
+                    <div class="category-card__body">
+                        <ul>
+                            <li><a href="#">Незаконые увольнения,</a></li>
+                            <li><a href="#">Задерживают зарплату,</a></li>
+                            <li><a href="#">Не выплачен расчет</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                        <a class="text-muted" href="#">+ ещё 11 проблем</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group panel-group_categories-list visible-xs" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_1" aria-controls="collapse_1">
+                                <img class="panel-heading__img" src="img/icon/goods.png" alt="">
+                                Товары и услуги
+                                <span class="panel__icon-toggle">
+                                    <img src="img/icon-menu_up-big-blue.png" alt="">
+                                </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse_1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Потеря или задержка посылки</a></li>
+                                <li><a href="#">Очередь и хамство</a></li>
+                                <li><a href="#">Повреждение посылки</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_2">
+                                <img class="panel-heading__img" src="img/icon/goods.png" alt="">
+                                Товары и услуги
+                                <span class="panel__icon-toggle">
+                                    <img src="img/icon-menu_up-big-blue.png" alt="">
+                                </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse_2" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Потеря или задержка посылки</a></li>
+                                <li><a href="#">Очередь и хамство</a></li>
+                                <li><a href="#">Повреждение посылки</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_3">
+                                <img class="panel-heading__img" src="img/icon/goods.png" alt="">
+                                Товары и услуги
+                                <span class="panel__icon-toggle">
+                                    <img src="img/icon-menu_up-big-blue.png" alt="">
+                                </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse_3" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Потеря или задержка посылки</a></li>
+                                <li><a href="#">Очередь и хамство</a></li>
+                                <li><a href="#">Повреждение посылки</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_4">
+                                <img class="panel-heading__img" src="img/icon/goods.png" alt="">
+                                Товары и услуги
+                                <span class="panel__icon-toggle">
+                                    <img src="img/icon-menu_up-big-blue.png" alt="">
+                                </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse_4" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Потеря или задержка посылки</a></li>
+                                <li><a href="#">Очередь и хамство</a></li>
+                                <li><a href="#">Повреждение посылки</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_5">
+                                <img class="panel-heading__img" src="img/icon/goods.png" alt="">
+                                Товары и услуги
+                                <span class="panel__icon-toggle">
+                                    <img src="img/icon-menu_up-big-blue.png" alt="">
+                                </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse_5" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Потеря или задержка посылки</a></li>
+                                <li><a href="#">Очередь и хамство</a></li>
+                                <li><a href="#">Повреждение посылки</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-light text-center m-b-20">В нашем каталоге еще 7 категорий и 370 проблемы </p>
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg">Смотреть все</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">О проекте</div>
+            <div class="descr-mobile-collapsed">
+                <p class="section-text descr-mobile-collapsed__text">
+                    Проект "Открытый Диалог" создан для решения проблем населения и улучшения качества жизни каждого гражданина.&nbsp;<br>
+                    Теперь Вам не нужно никуда ходить, чтобы подать жалобу.&nbsp;<br>
+                    С возможностями ресурса "Открытый диалог" подача жалобы занимает не больше 5 минут. Мы поможем Вам составить максимально грамотную жалобу по любой проблеме.<br>
+                    Готовый документ вышлем на Ваш е-mail и отправим за Вас заказным письмом по адресам государственных органов, Почта России присвоит отправлению номер для отслеживания, а мы сохраним всю историю в Вашем личном кабинете. Когда же придет ответ на Вашу жалобу, мы его бережно отсканируем и передадим Вам, а если ответ Вас не устроит или вообще не придет, то мы вместе с Вами будем жаловаться в вышестоящие инстанции, пока проблема не будет решена.
+                </p>
+                <div class="text-light descr-mobile-collapsed__action">
+                    <span class="descr-mobile-collapsed__action-on">Читать далее...</span>
+                    <span class="descr-mobile-collapsed__action-off">Скрыть</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <hr>
+            <div class="section-title">Подача жалобы в 3 простых шага</div>
+            <div class="steps-view">
+                <div class="steps-view__item">
+                    <div class="steps-view__item-icon">
+                        <img src="img/img-keyboard.png" alt="">
+                    </div>
+                    <div class="steps-view__item-name">Описание проблемы</div>
+                    <p class="steps-view__item-caption">Впишите необходимые данные и опишите Вашу проблему подробно</p>
+                </div>
+                <div class="steps-view__arrow">
+                    <img class="steps-view__item-icon_horizontal" src="img/step-arrow-up.png" alt="">
+                    <img class="steps-view__item-icon_vertical" src="img/step-arrow-down2.png" alt="">
+                </div>
+                <div class="steps-view__item">
+                    <div class="steps-view__item-icon">
+                        <img src="img/img-mail.png" alt="">
+                    </div>
+                    <div class="steps-view__item-name">Отправка жалобы</div>
+                    <p class="steps-view__item-caption">Нажмите кнопку отправить. Мы отправим физическое письмо с Вашим обращением в выбранные органы.</p>
+                </div>
+                <div class="steps-view__arrow">
+                    <img class="steps-view__item-icon_horizontal" src="img/step-arrow-down.png" alt="">
+                    <img class="steps-view__item-icon_vertical" src="img/step-arrow-down2.png" alt="">
+                </div>
+                <div class="steps-view__item">
+                    <div class="steps-view__item-icon">
+                        <img src="img/img-gerb.png" alt="">
+                    </div>
+                    <div class="steps-view__item-name">Поднимайте выше</div>
+                    <p class="steps-view__item-caption">Если органы, в которые Вы обращались проигноривали или отказали. Отправляйте Вашу жалобу в органы выше.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">Видео о проекте</div>
+            <div class="video-wrap">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3jT_q7dt-cM" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-soc-nets m-b-30">
+        <div class="container">
+            <div class="section-soc-nets__inner-wrap">
+                <div class="section-soc-nets__caption">
+                    Подпишитесь на нас в соц.сетях <br>
+                    и следите за новостями проекта
+                </div>
+                <div class="soc-nets">
+                    <a href="#"><img src="img/icon-vk_blue.png" alt=""></a>
+                    <a href="#"><img src="img/icon-fb_blue.png" alt=""></a>
+                    <a href="#"><img src="img/icon-inst_blue.png" alt=""></a>
+                    <a href="#"><img src="img/icon-twit_blue.png" alt=""></a>
+                    <a href="#"><img src="img/icon-youtube_blue.png" alt=""></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card-thumbnail">
+                        <div class="card-thumbnail__title">Вконтакте</div>
+                        <div class="card-thumbnail__img">
+                            <img src="img/thumbnail-sm.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card-thumbnail">
+                        <div class="card-thumbnail__title">Facebook</div>
+                        <div class="card-thumbnail__img">
+                            <img src="img/thumbnail-xs.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-thumbnail">
+                        <div class="card-thumbnail__title">Instagram</div>
+                        <div class="card-thumbnail__img">
+                            <img src="img/thumbnail-lg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-thumbnail">
+                        <div class="card-thumbnail__title">twitter</div>
+                        <div class="card-thumbnail__img">
+                            <img src="img/thumbnail-sm.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card-thumbnail">
+                        <div class="card-thumbnail__title">youtube</div>
+                        <div class="card-thumbnail__img">
+                            <img src="img/thumbnail-xs.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-skiey">
+        <div class="container">
+            <div class="section-title">Органы</div>
+            <div class="card-list hidden-xs">
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-pristavi.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Федеральная Служба Судебных Приставов</div>
+                </a>
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-post.png" alt="">
+                    </div>
+                    <div class="organization-card__title">ФГУП Почта России</div>
+                </a>
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-rospotrebnadzor.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Роспотребнадзор</div>
+                </a>
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-roszdravnadzor.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Росздравнадзор</div>
+                </a>
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-nalog.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Федеральная Налоговая Служба</div>
+                </a>
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-prokuratura.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Прокуратура Российской Федерации</div>
+                </a>
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-rosprirodnadzor.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Росприроднадзор</div>
+                </a>
+                <a href="#" class="organization-card animation-scale-hover">
+                    <div class="organization-card__img">
+                        <img src="img/organ-trud.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Государственная Инспекция Труда</div>
+                </a>
+            </div>
+            <div id="sliderOrganizations" class="card-list visible-xs">
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-pristavi.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Федеральная Служба Судебных Приставов</div>
+                </a>
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-post.png" alt="">
+                    </div>
+                    <div class="organization-card__title">ФГУП Почта России</div>
+                </a>
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-rospotrebnadzor.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Роспотребнадзор</div>
+                </a>
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-roszdravnadzor.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Росздравнадзор</div>
+                </a>
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-nalog.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Федеральная Налоговая Служба</div>
+                </a>
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-prokuratura.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Прокуратура Российской Федерации</div>
+                </a>
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-rosprirodnadzor.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Росприроднадзор</div>
+                </a>
+                <a href="#" class="organization-card">
+                    <div class="organization-card__img">
+                        <img src="img/organ-trud.png" alt="">
+                    </div>
+                    <div class="organization-card__title">Государственная Инспекция Труда</div>
+                </a>
+            </div>
+            <hr>
+            <div class="text-center m-b-50 m-t-30">
+                <button class="btn btn-primary btn-lg">Все органы</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">Партнёры</div>
+            <div class="card-list card-list_partners">
+                <img src="img/partner-russia24.png" class="card-list__item" alt="">
+                <img src="img/partner-rbk.png" class="card-list__item" alt="">
+                <img src="img/partner-rain.png" class="card-list__item" alt="">
+                <img src="img/partner-arguments_and_facts.png" class="card-list__item" alt="">
+                <img src="img/partner-moskow24.png" class="card-list__item" alt="">
+                <img src="img/partner-pravo.png" class="card-list__item" alt="">
+                <img src="img/partner-paco.png" class="card-list__item" alt="">
+                <img src="img/partner-slon.png" class="card-list__item" alt="">
+                <img src="img/partner-adindex.png" class="card-list__item" alt="">
+                <img src="img/partner-template_monster.png" class="card-list__item" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-skiey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 col-xs-12">
+                    <div class="section-title">Вход / Регистрация</div>
+                    <div class="panel panel-default m-b-30">
+                        <div class="panel-body">
+                            <div class="w-m-300 center-block">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-custom m-b-30 fs-15 fw-medium" role="tablist">
+                                    <li role="presentation" class="nav-tabs-custom__item active">
+                                        <a href="#tabRegistration2" class="nav-tabs-custom__btn" role="tab" data-toggle="tab">Регистрация</a>
+                                    </li>
+                                    <li role="presentation" class="nav-tabs-custom__item">
+                                        <a href="#tabLogin2" class="nav-tabs-custom__btn" role="tab" data-toggle="tab">Пользователь</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content p-0 m-b-20">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="tabRegistration2">
+                                        //= blocks/form-registration.html
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tabLogin2">
+                                        <div class="form-login-height form-horizontal fs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Имя</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static">Владимир Владимирович</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Эл. почта</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static">example@example.dom</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Телефон</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static">+7 (999) 999-99-99</p>
+                                                </div>
+                                            </div>
+                                            <div class="m-t-20 text-center">
+                                                <a href="#" class="link-underline text-muted"><span class="glyphicon glyphicon-user m-r-10"></span>перейти в профиль пользователя</a>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-block fs-12 m-t-30">Выход</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+//= blocks/footer.html
+
+//= blocks/button-to_top.html
+
+<script src='js/libs.min.js'></script>
+<script src='js/main.js'></script>
+
+<!-- Modal -->
+//= blocks/modal-location.html
+
+//= blocks/modal-request.html
+
+</body>
+</html>

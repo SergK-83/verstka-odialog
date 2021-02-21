@@ -1,0 +1,33 @@
+{
+  "name": "good",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "natives": "^1.1.6",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pngquant": "^1.0.10",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kriukov Sergey",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass-datepicker": "^1.0.0",
+    "gulp-update": "0.0.2",
+    "inputmask": "^4.0.9",
+    "jquery.fancybox": "^2.1.5"
+  }
+}

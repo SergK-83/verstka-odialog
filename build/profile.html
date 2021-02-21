@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+
+<header class="main-header">
+    <nav class="navbar">
+        <div class="container main-header__container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header dropdown">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"  data-toggle="dropdown">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <ul class="dropdown-menu fs-12">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="header-not-authorized.html">Шапка не авториз</a></li>
+                    <li><a href="header-authorized.html">Шапка авториз</a></li>
+                    <li><a href="login-register.html">Вход/Регистрация</a></li>
+                    <li><a href="cabinet.html">Личный кабинет</a></li>
+                    <li><a href="categories.html">Категории</a></li>
+                    <li><a href="categories-list.html">Категории-список</a></li>
+                    <li><a href="step_2.html">Шаг 2</a></li>
+                    <li><a href="step_2-new.html">Шаг 2 NEW</a></li>
+                    <li><a href="lenta.html">Лента</a></li>
+                    <li><a href="organizations-list.html">Список органов</a></li>
+                    <li><a href="organization.html">Страница органа</a></li>
+                    <li><a href="page_404.html">Страница 404</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                    <li><a href="chat.html">Чат</a></li>
+                    <li><a href="modals.html">Модалки</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li class="navbar-nav__make-complain">
+                        <a href="step_2-new.html">
+                            <span class="text-primary text-uppercase">Подать <br> жалобу</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Войти</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li class="navbar-nav__make-complain">
+                    <a href="step_2-new.html">
+                        <span class="text-primary text-uppercase">Подать жалобу</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="main-header__inner-wrap">
+                    <div class="main-header__top clearfix">
+                        <ul class="nav navbar-nav navbar-nav_main">
+                            <li class="active"><a href="#">Каталог жалоб</a></li>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Органы</a></li>
+                            <li><a href="#">Партнёры</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-header__bottom clearfix">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="location" href="#modalLocation" data-toggle="modal">
+                                    <img src="img/icon-location.png" alt="">
+                                    <span class="location__caption">Москва</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left main-header__search-wrap">
+                            <div class="main-search">
+                                <input type="text" class="form-control" placeholder="Поиск по жалобам, людям, ситуациям, органам">
+                                <div class="main-header__search-close">
+                                    <img src="img/icon-cross.png" alt="">
+                                </div>
+                                <button class="btn btn-primary"><img src="img/icon-search.png" alt=""></button>
+                            </div>
+                            <div class="main-header__search-opener pull-right">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
+                            <li>
+                                <a href="login-register.html">
+                                    <img class="m-r-10" src="img/icon-user.png" alt="">
+                                    <span>Вход/Регистрация</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- /.navbar-collapse -->
+            <div class="main-header__extra-menu-wrap">
+                <div class="main-header__extra-menu">
+                    <div class="input-group input-group-sm">
+                        <div class="input-icon-rub">
+                            <input type="text" class="form-control">
+                        </div>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Пожертвовать</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__section footer__section_top">
+            <div class="footer-logo">
+                <img class="img-responsive" src="img/logo-light.png" alt="">
+            </div>
+            <ul class="nav nav-pills">
+                <li role="presentation"><a href="#">Подать жалобу</a></li>
+                <li role="presentation"><a href="#">Каталог Жалоб</a></li>
+                <li role="presentation"><a href="#">О Проекте</a></li>
+                <li role="presentation"><a href="#">Органы</a></li>
+                <li role="presentation"><a href="#">Партнеры</a></li>
+                <li role="presentation"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section_bottom fs-11">
+            <span>© 2018 Открытый Диалог</span>
+            <div class="footer__social-links">
+                <a href="#"><img src="img/icon-vk.png" alt=""></a>
+                <a href="#"><img src="img/icon-fb.png" alt=""></a>
+                <a href="#"><img src="img/icon-inst.png" alt=""></a>
+                <a href="#"><img src="img/icon-twit.png" alt=""></a>
+                <a href="#"><img src="img/icon-youtube.png" alt=""></a>
+            </div>
+            <div class="text-right">
+                <div class="m-b-5">8-800-999-99-99</div>
+                <div>info@otkrytyj dialog.ru</div>
+            </div>
+        </div>
+
+    </div>
+    <div></div>
+</footer>
+
+<div id="scrollup">
+    <div>
+        <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+    </div>
+</div>
+
+<script src='js/libs.min.js'></script>
+<script src='js/main.js'></script>
+
+<!-- Modal -->
+<!-- modal выбор города -->
+<div id="modalLocation" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-info">Укажите ваш город</h4>
+            </div>
+            <div class="modal-body">
+                <div id="the-basics">
+                    <input class="typeahead form-control" type="text" placeholder="Укажите ваш город" value="Москва">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-sm btn-primary">Применить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

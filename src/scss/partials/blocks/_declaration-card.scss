@@ -1,0 +1,135 @@
+/*
+====================================
+  declaration-card
+====================================
+*/
+
+.declaration-card-action-add {
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.declaration-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.declaration-card {
+  display: inline-block;
+  position: relative;
+  width: 143px;
+  margin: 0 15px 25px;
+}
+
+.declaration-card_disabled {
+  .declaration-card__body {
+    opacity: .6;
+  }
+}
+
+.declaration-card__body {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.declaration-card:hover {
+  cursor: pointer;
+
+  .declaration-card__body {
+    box-shadow: 0 0 5px 0 #2161cc;
+  }
+}
+
+.declaration-card__remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+.declaration-card__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 114px;
+  overflow: hidden;
+  padding: 5px 12px;
+}
+
+.declaration-card__img-image {
+  max-height: 100%;
+  max-width: 100%;
+  opacity: .7;
+}
+
+.declaration-card__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f8fc;
+  padding: 5px;
+}
+
+.declaration-card__menu-item {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.declaration-card__footer {
+  padding-top: 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+.declaration-card__footer > * {
+  vertical-align: bottom;
+}
+
+.declaration-card_active {
+
+  .declaration-card__img:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url("../img/check-mark-blue-67x51.png") no-repeat center center;
+  }
+}
+
+@media (max-width: 470px) {
+  .declaration-card {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+    .declaration-card__body {
+      width: 115px;
+      margin-right: 15px;
+    }
+
+    .declaration-card__img {
+      height: 100px;
+    }
+
+    .declaration-card__footer {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-top: 5px;
+    }
+
+    .declaration-card__footer-caption {
+      padding-top: 6px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/*
+====================================
+  popover
+====================================
+*/
+
+.popover {
+  border: 3px solid $primary;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.popover.bottom>.arrow {
+  border-bottom-color: $primary;
+}
+
+.popover.bottom>.arrow:after {
+  top: 3px;
+}
+
+.popover-content {
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.card-list_advantages {
+  .popover {
+    max-width: 100%;
+    width: 100%;
+  }
+}

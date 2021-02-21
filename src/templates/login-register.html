@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+//= blocks/header.html
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="big-title text-center">Вход</div>
+                <form class="form-login">
+                    <fieldset class="form-login__fieldset">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Пароль">
+                        </div>
+                        <div class="text-center"><u><a class="text-black" href="#modalChangePassword" data-toggle="modal">Забыли пароль?</a></u></div>
+                    </fieldset>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary w-300">Войти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-6">
+                <div class="big-title text-center">Регистрация</div>
+                <form class="form-login">
+                    <fieldset class="form-login__fieldset">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Пароль">
+                        </div>
+                        <div class="checkbox checkbox-custom checkbox-custom_agreement active">
+                            <label>
+                          <span class="checkbox-custom__toggle">
+                            <img class="checkbox-custom__icon-ok" src="img/icon-ok.png" alt="">
+                          </span>
+                                <input type="checkbox" checked>
+                                <span class="checkbox-custom__caption text-light">Я согласен с правилами и принимаю <a href="#">соглашение проекта "Открытый диалог"</a></span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary w-300">Зарегистрироваться</button>
+                    </div>
+                </form>
+                <div class="m-b-70"></div>
+            </div>
+            <div class="col-xs-12">
+                <p class="fs-16 m-b-30 text-center">Войти через социальные сети</p>
+                <div class="soc-nets text-center">
+                    <a href="#"><img src="img/vk.png" alt=""></a>
+                    <a href="#"><img src="img/fb.png" alt=""></a>
+                    <a href="#"><img src="img/twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+//= blocks/footer.html
+
+<script src='js/libs.min.js'></script>
+<script src='js/main.js'></script>
+
+<!-- Modal -->
+//= blocks/modal-location.html
+//= blocks/modal-change_password.html
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+/*
+====================================
+  checkbox-custom
+====================================
+*/
+
+.checkbox-custom label {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+.checkbox-custom__toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-custom__caption {
+  padding-top: 1px;
+  line-height: 1;
+}
+
+.checkbox-custom input {
+  visibility: hidden;
+}
+
+.checkbox-custom label:hover .checkbox-custom__toggle {
+  border: 1px solid #999;
+}
+
+.checkbox-custom__toggle > .checkbox-custom__icon-ok {
+  visibility: hidden;
+}
+
+.checkbox-custom.active .checkbox-custom__toggle > .checkbox-custom__icon-ok {
+  visibility: visible;
+}
+
+.checkbox-custom_agreement .checkbox-custom__caption {
+  font-size: 10px;
+  line-height: 1.2;
+  padding-top: 3px;
+}

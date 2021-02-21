@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+//= blocks/header-authorized_user.html
+
+<main>
+    <div class="container">
+        //= blocks/breadcrumbs.html
+        <div class="row od-cabinet-tabs">
+            <div class="col-sm-2">
+                <ul class="nav nav-pills nav-stacked nav-stacked_main fs-16">
+                    <li role="presentation" class="active"><a href="#tape" data-toggle="tab">Лента</a></li>
+                    <li role="presentation"><a href="#complaints" data-toggle="tab">Жалобы</a></li>
+                    <li role="presentation"><a href="#finance" data-toggle="tab">Финансы</a></li>
+                    <li role="presentation"><a href="#profile" data-toggle="tab">Профиль</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-10">
+                <div class="tab-content bg-skiey">
+                    <div role="tabpanel" class="tab-pane fade in active" id="tape">
+                        <ul class="nav nav-pills od-cabinet-tabs__nav-pills-submenu m-b-10">
+                            <li role="presentation" class="active"><a href="#popular" data-toggle="tab">Популярное</a></li>
+                            <li role="presentation"><a href="#newComplaint" data-toggle="tab">Новое</a></li>
+                            <li role="presentation"><a href="#subscriberComplaints" data-toggle="tab">Жалобы подписчиков</a></li>
+                        </ul>
+                        <div class="tab-content p-0">
+                            <div role="tabpanel" class="tab-pane fade in active" id="popular">
+                                //= blocks/post.html
+
+                                <div class="box">
+                                    <div class="input-comment input-comment_main">
+                                        <div class="input-comment__body">
+                                            <div class="input-comment__field">
+                                                <img class="input-comment__icon" src="img/icon-user-circle.png" alt="">
+                                                <textarea name="" rows="3" class="form-control" placeholder="Оставить комментарий"></textarea>
+                                            </div>
+                                            <button class="btn btn-default btn-sm input-comment__btn-send"><span class="text-primary">Отправить</span></button>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <ul class="comment-list">
+                                        <li>
+                                            //= blocks/comment.html
+                                            <ul>
+                                                <li>
+                                                    //= blocks/comment.html
+                                                    <ul></ul>
+                                                </li>
+                                                <li>
+                                                    //= blocks/comment.html
+                                                    <ul></ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            //= blocks/comment.html
+                                            <ul></ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="newComplaint">Новое</div>
+                            <div role="tabpanel" class="tab-pane fade" id="subscriberComplaints">Жалобы подписчиков</div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="complaints">
+                        //= blocks/post-tab-complaints.html
+
+                        <div class="box">
+                            <div class="input-comment input-comment_main">
+                                <div class="input-comment__body">
+                                    <div class="input-comment__field">
+                                        <img class="input-comment__icon" src="img/icon-user-circle.png" alt="">
+                                        <textarea name="" rows="3" class="form-control" placeholder="Оставить комментарий"></textarea>
+                                    </div>
+                                    <button class="btn btn-default btn-sm input-comment__btn-send"><span class="text-primary">Отправить</span></button>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <ul class="comment-list">
+                                <li>
+                                    //= blocks/comment.html
+                                    <ul>
+                                        <li>
+                                            //= blocks/comment.html
+                                            <ul></ul>
+                                        </li>
+                                        <li>
+                                            //= blocks/comment.html
+                                            <ul></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    //= blocks/comment.html
+                                    <ul></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="finance">
+                        <div class="box">
+                            <div class="fs-16 m-b-20"><b>Ваш баланс: 100р</b></div>
+                            <div class="m-b-10">
+                                <button class="btn btn-primary btn-sm m-r-20">Пополнить</button>
+                                <img src="img/pay_card.png" alt="">
+                            </div>
+                            <p class="fs-12 text-light">Дата последнего платежа: 27.10.2018</p>
+                        </div>
+                        <div class="box pay-history">
+                            <h4 class="m-b-20">История платижей</h4>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-sm-12">
+                                            <ul class="nav nav-pills nav-stacked nav-stacked_pay-history m-b-20 fs-14">
+                                                <li role="presentation" class="active"><a href="#">За день</a></li>
+                                                <li role="presentation"><a href="#">За неделю</a></li>
+                                                <li role="presentation"><a href="#">За месяц</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 m-b-20">
+                                            <div class="pay-history__period">
+                                                <span class="fs-12">Указать период:</span>
+                                                <div class="input-datepicker">
+                                                    <span>С</span>
+                                                    <input type="text" class="datepicker form-control">
+                                                    <img class="input-datepicker__icon" src="img/icon-calendar.png" alt="">
+                                                </div>
+                                                <div class="input-datepicker">
+                                                    <span>По</span>
+                                                    <input type="text" class="datepicker form-control">
+                                                    <img class="input-datepicker__icon" src="img/icon-calendar.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="table-wrap">
+                                        <table class="table table_pay-history">
+                                            <thead>
+                                            <tr>
+                                                <th>Дата</th>
+                                                <th>Номер платежа</th>
+                                                <th>Статус</th>
+                                                <th>Сумма</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>29.01.2017</td>
+                                                <td>JG456H</td>
+                                                <td>Принят</td>
+                                                <td>1000000р</td>
+                                            </tr>
+                                            <tr>
+                                                <td>29.01.2017</td>
+                                                <td>KB675J</td>
+                                                <td>Принят</td>
+                                                <td>100р</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="profile">
+                        <form class="form-horizontal form-profile">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">ФИО <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Адрес <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Дата рождения <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">E-mail <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Пароль <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Телефон <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">ИНН <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">СНИЛС <span class="icon-required"></span></label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" data-require="true">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Вконтакте </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Facebook </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Одноклассники </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="text-center">
+                                <button class="btn btn-primary">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+//= blocks/footer.html
+
+<script src='js/libs.min.js'></script>
+<script src='js/main.js'></script>
+
+<!-- Modal -->
+//= blocks/modal-location.html
+
+</body>
+</html>

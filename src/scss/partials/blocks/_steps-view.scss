@@ -1,0 +1,156 @@
+/*
+====================================
+  steps-view
+====================================
+*/
+
+.steps-view {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+
+.steps-view__item {
+  flex-basis: 250px;
+  text-align: center;
+}
+
+.steps-view__item-icon {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps-view__item-icon img {
+  max-width: 125px;
+}
+
+.steps-view__item-name {
+  color: $primary;
+  font-family: Bernier;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.25;
+  text-transform: lowercase;
+}
+
+.steps-view__item-caption {
+  font-size: 13px;
+  line-height: 1.23;
+}
+
+.steps-view__arrow {
+  max-width: 125px;
+  align-self: center;
+  margin: 5px;
+  padding-bottom: 32px;
+}
+
+.steps-view__arrow img {
+  max-width: 100%;
+}
+
+.steps-view__item-icon_vertical {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .steps-view__item-icon {
+    height: 130px;
+  }
+
+  .steps-view__item-icon img {
+    max-width: 100px;
+  }
+
+  .steps-view__item-name {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .steps-view__item-caption {
+    font-size: 12px;
+  }
+
+  .steps-view__arrow {
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .steps-view__item {
+    width: 270px;
+    margin: 0 auto;
+  }
+
+  .steps-view__item-icon {
+    height: 100px;
+  }
+
+  .steps-view__item-icon img {
+    max-width: 80px;
+  }
+
+  .steps-view__item-name {
+    font-size: 17px;
+  }
+
+  .steps-view__item-caption {
+    font-size: 11px;
+  }
+
+  .steps-view__arrow {
+    padding-bottom: 47px;
+  }
+}
+
+@media (max-width: 500px) {
+  .steps-view {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .steps-view__item-icon_horizontal {
+    display: none;
+  }
+
+  .steps-view__item-icon_vertical {
+    display: inline;
+  }
+
+  .steps-view {
+    display: block;
+  }
+
+  .steps-view__item-icon {
+    height: auto;
+  }
+
+  .steps-view__item-icon img {
+    max-width: 85px;
+  }
+
+  .steps-view__item-name {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .steps-view__item-caption {
+    font-size: 12px;
+  }
+
+  .steps-view__arrow {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 15px;
+  }
+
+  .steps-view__arrow img {
+    height: 30px;
+  }
+}

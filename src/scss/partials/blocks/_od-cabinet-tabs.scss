@@ -1,0 +1,29 @@
+/*
+====================================
+  od-cabinet-tabs
+====================================
+*/
+
+@media (max-width: 767px) {
+  .od-cabinet-tabs {
+    .tab-content {
+      padding: 15px 5px;
+    }
+
+    .box {
+      padding: 10px;
+    }
+
+    .post {
+      padding: 15px 10px;
+    }
+  }
+
+  .od-cabinet-tabs__nav-pills-submenu {
+    font-size: 12px;
+
+    > li > a {
+      padding: 0 7px 10px;
+    }
+  }
+}
